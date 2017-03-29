@@ -24,8 +24,7 @@ $(function() {
 	}
 
 	function prevSlide() {
-		moveLastSlide();
-		carouselList.animate({marginLeft: 0}, 500);
+		carouselList.animate({marginLeft: 0}, 500, moveLastSlide);
 	}
 
 	interval = setInterval(nextSlide, 3000);
