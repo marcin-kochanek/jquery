@@ -18,9 +18,8 @@ $(function() {
 		carouselList.css({marginLeft: -500});	
 	}
 
-	function nextSlide() {
-		moveFirstSlide();
-		carouselList.animate({marginLeft: -500}, 500);
+	function nextSlide() {		
+		carouselList.animate({marginLeft: -500}, 500, moveFirstSlide);
 	}
 
 	function prevSlide() {
